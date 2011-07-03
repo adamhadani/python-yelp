@@ -1,0 +1,55 @@
+Yelp API Python Client
+----------------------
+
+A simple, complete Yelp API client implementation in Python.
+
+== Installing ==
+
+To install, issue the following command:
+  python setup.py install
+  
+This will install the package 'yelp' to your currently active
+python site-packages repository.
+
+
+== Example usage ==
+
+from yelp import ReviewSearchApi
+results = ReviewSearchApi(client_key=<my_key>, output="json").by_location("Mission, San Francisco CA")
+
+
+results will be returned as a parsed python object. 
+The exact format of returned result set is available 
+at the Yelp API documentation page:
+
+http://www.yelp.com/developers/documentation
+
+More verbose documentation of the various functionalities offered is made available
+through-out the code using PyDoc.
+
+
+== Release notes == 
+
+- This software is distributed under the Apache 2.0 license
+
+- Python 2.5 and above should be supported, however 2.6 is recommended.
+
+- The only external dependency is on httplib2. If setuptools is installed,
+  this should be automatically fetched and installed.
+
+- To install, simply use:
+	  python setup.py install
+
+- The base HttpApiClient has a logger to enable debug logging of the URI's
+  used. This might raise warning when a logging module basicConfig/fileConfig
+  wasnt issued by the application. This has no effect but can be easily
+  solved by importing logging module and using e.g:
+  logging.basicConfig(level=logging.INFO)
+  
+- This package is *not* currently affiliated/endorsed by Yelp in any way.
+
+- Send all feedback to adamhadani@gmail.com
+
+
+Enjoy!
+
