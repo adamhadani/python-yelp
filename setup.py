@@ -26,6 +26,15 @@ METADATA = dict(
     license = 'Apache License 2.0',
     url = 'https://github.com/adamhadani/python-yelp',
     keywords = 'yelp api',
+    classifiers = [
+        "Programming Language :: Python",
+        "Programming Language :: Python :: 2.6",        
+        "Development Status :: 5 - Production/Stable",
+        "License :: OSI Approved :: Apache Software License",
+        "Operating System :: POSIX",
+        "Intended Audience :: Developers",
+        ],
+
     packages = ['yelp']
 )
 
