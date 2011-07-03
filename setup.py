@@ -18,13 +18,13 @@
 
 # Basic package metadata
 METADATA = dict(
-    name = 'yelp-python-client',
+    name = 'python-yelp',
     version  = '0.1.1',
     author   = 'Adam Ever-Hadani',
     author_email = 'adamhadani@gmail.com',
     description  = 'A python client for the Yelp API',
     license = 'Apache License 2.0',
-    url = 'http://code.google.com/p/yelp-python-client/',
+    url = 'https://github.com/adamhadani/python-yelp',
     keywords = 'yelp api',
     packages = ['yelp']
 )
